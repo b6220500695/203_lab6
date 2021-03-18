@@ -12,7 +12,6 @@ int main()
     }
 for(a=0;a<m;a++)
     {
-
         for(b=a+1;b<m;b++)
         {
             if(strcmp(k[a],k[b])>0);
@@ -21,10 +20,8 @@ for(a=0;a<m;a++)
                 strcpy(k[a],k[b]);
                 strcpy(k[b],temp);
             }
-
         }
     }
-
     for(a=0;a<m;a++)
     {
         printf("%s\n",k[a]);
