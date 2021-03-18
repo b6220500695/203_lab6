@@ -13,3 +13,11 @@ int main()
     {
         for(b=a+1;b<n;b++)
         {
+           if(strcmp(k[a],k[b])>0);
+            {
+                strcpy(temp,k[a]);
+                strcpy(k[a],k[b]);
+                strcpy(k[b],temp);
+            }
+        }
+    }
