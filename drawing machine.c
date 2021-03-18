@@ -69,3 +69,14 @@ else if(k[i]=='D')
    else if(x[b][c]!='|'||x[b][c]!='+')
    x[b][c]='+';
   }
+  }
+ for(i=0;i<m;i++)
+ {
+  for(j=0;j<m;j++)
+  {
+   printf("%c",x[i][j]);
+  }
+  printf("\n");
+ }
+ return 0;
+}
