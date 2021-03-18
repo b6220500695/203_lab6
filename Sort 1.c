@@ -10,3 +10,17 @@ int main()
 
         scanf("%s",k[a]);
     }
+for(a=0;a<m;a++)
+    {
+
+        for(b=a+1;b<m;b++)
+        {
+            if(strcmp(k[a],k[b])>0);
+            {
+                strcpy(temp,k[a]);
+                strcpy(k[a],k[b]);
+                strcpy(k[b],temp);
+            }
+
+        }
+    }
