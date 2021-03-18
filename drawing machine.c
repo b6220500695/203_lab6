@@ -30,3 +30,16 @@ int main()
    else if(x[b][c]!='-'||x[b][c]!='+')
    x[b][c]='+';
   }
+else if(k[i]=='D')
+  {
+   if(x[b][c]=='.'||x[b][c]=='|')
+   x[b][c]='|';
+   else if(x[b][c]!='-'||x[b][c]!='+')
+   x[b][c]='+';
+   if(b+1<m)
+   b++;
+   if(x[b][c]=='.'||x[b][c]=='|')
+   x[b][c]='|';
+   else if(x[b][c]!='-'||x[b][c]!='+')
+   x[b][c]='+';
+  }
