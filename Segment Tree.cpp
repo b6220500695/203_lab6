@@ -26,7 +26,12 @@ int query(int st,int ed,int p,int l,int r){
     int mid = (st+ed)/2;
     return max(query(st,mid,2*p,l,r),query(mid+1,ed,2*p+1,l,r));
 }
-
+int main(){
+    int n,Q;
+    scanf("%d%d",&n,&Q);
+    while(1<<nn < n) nn++;
+    nn = 1<<nn;
+    
 
 
 
