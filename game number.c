@@ -6,3 +6,6 @@ int main()
     char x[j],y[j];
     scanf("%s",x);
     scanf("%s",y);
+ for ( i = 0; i < j; i++)
+    {
+    }
