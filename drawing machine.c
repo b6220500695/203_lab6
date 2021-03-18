@@ -14,3 +14,19 @@ int main()
    x[i][j]='.';
   }
  }
+ int b=0,c=0;
+ for(i=0;i<strlen(k);i++)
+ {
+  if(k[i]=='U')
+  {
+   if(x[b][c]=='.'||x[b][c]=='|')
+   x[b][c]='|';
+   else if(x[b][c]!='-'||x[b][c]!='+')
+   x[b][c]='+';
+   if(b-1>=0)
+   b--;
+   if(x[b][c]=='.'||x[b][c]=='|')
+   x[b][c]='|';
+   else if(x[b][c]!='-'||x[b][c]!='+')
+   x[b][c]='+';
+  }
