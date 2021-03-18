@@ -31,7 +31,19 @@ int main(){
     scanf("%d%d",&n,&Q);
     while(1<<nn < n) nn++;
     nn = 1<<nn;
-    
+     while(Q--){
+        char c;
+        int a,b;
+        scanf(" %c %d %d",&c,&a,&b);
+        if(c == 'U'){
+            change(0,nn-1,1,a-1,a-1,b);
+        }
+        if(c == 'P'){
+            printf("%d\n",query(0,nn-1,1,a-1,b-1));
+        }
+    }
+    return 0;
+}
 
 
 
