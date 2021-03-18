@@ -2,17 +2,16 @@
 #include<string.h>
 int main()
 {
-    int m,a,b;
-    scanf("%d",&m);
-    char k[m][1000],temp[1000];
-    for(a=0;a<m;a++)
+    int n,a,b;
+    scanf("%d",&n);
+    char k[n][1000],temp[1000];
+    for(a=0;a<n;a++)
     {
-
         scanf("%s",k[a]);
     }
-for(a=0;a<m;a++)
+for(a=0;a<n;a++)
     {
-        for(b=a+1;b<m;b++)
+        for(b=a+1;b<n;b++)
         {
             if(strcmp(k[a],k[b])>0);
             {
@@ -22,7 +21,7 @@ for(a=0;a<m;a++)
             }
         }
     }
-    for(a=0;a<m;a++)
+    for(a=0;a<n;a++)
     {
         printf("%s\n",k[a]);
     }
