@@ -16,3 +16,19 @@ void change(int st,int ed,int p,int l,int r,int x){
     change(mid+1,ed,2*p+1,l,r,x);
     seg[p] = max(seg[2*p],seg[2*p+1]);
 }
+int query(int st,int ed,int p,int l,int r){
+    if(l>ed || r<st){
+        return -1e9;
+    }
+    if(st>=l&&ed<=r){
+        return seg[p];
+    }
+    int mid = (st+ed)/2;
+    return max(query(st,mid,2*p,l,r),query(mid+1,ed,2*p+1,l,r));
+}
+
+
+
+
+
+
