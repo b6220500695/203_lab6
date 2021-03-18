@@ -8,4 +8,14 @@ int main()
     scanf("%s",y);
  for ( i = 0; i < j; i++)
     {
+       if (y[i]==x[i])
+        {
+            k++;
+        }
+        else
+        {
+            m++;
+        }
     }
+    printf("%d %d",k,m);
+}
