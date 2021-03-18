@@ -9,3 +9,7 @@ int main()
     {
         scanf("%s",k[a]);
     }
+    for(a=0;a<n;a++)
+    {
+        for(b=a+1;b<n;b++)
+        {
