@@ -8,4 +8,9 @@ int main()
  scanf("%s",k);
  int x[m][m];
  for(i=0;i<m;i++)
-}
+{
+  for(j=0;j<m;j++)
+  {
+   x[i][j]='.';
+  }
+ }
