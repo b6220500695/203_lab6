@@ -29,5 +29,5 @@ for(a=0;a<m;a++)
     {
         printf("%s\n",k[a]);
     }
-
+return 0;
 }
